@@ -1,0 +1,618 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF84A80E2C2CEC42003D69DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF84A80D2C2CEC42003D69DE /* AppDelegate.swift */; };
+		CF84A8102C2CEC42003D69DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF84A80F2C2CEC42003D69DE /* SceneDelegate.swift */; };
+		CF84A8122C2CEC42003D69DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF84A8112C2CEC42003D69DE /* ViewController.swift */; };
+		CF84A8152C2CEC42003D69DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF84A8132C2CEC42003D69DE /* Main.storyboard */; };
+		CF84A8182C2CEC42003D69DE /* ControleDeGastos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CF84A8162C2CEC42003D69DE /* ControleDeGastos.xcdatamodeld */; };
+		CF84A81A2C2CEC43003D69DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF84A8192C2CEC43003D69DE /* Assets.xcassets */; };
+		CF84A81D2C2CEC43003D69DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF84A81B2C2CEC43003D69DE /* LaunchScreen.storyboard */; };
+		CF84A8282C2CEC43003D69DE /* ControleDeGastosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF84A8272C2CEC43003D69DE /* ControleDeGastosTests.swift */; };
+		CF84A8322C2CEC43003D69DE /* ControleDeGastosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF84A8312C2CEC43003D69DE /* ControleDeGastosUITests.swift */; };
+		CF84A8342C2CEC43003D69DE /* ControleDeGastosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF84A8332C2CEC43003D69DE /* ControleDeGastosUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF84A8242C2CEC43003D69DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF84A8022C2CEC42003D69DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF84A8092C2CEC42003D69DE;
+			remoteInfo = ControleDeGastos;
+		};
+		CF84A82E2C2CEC43003D69DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF84A8022C2CEC42003D69DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF84A8092C2CEC42003D69DE;
+			remoteInfo = ControleDeGastos;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CF84A80A2C2CEC42003D69DE /* ControleDeGastos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ControleDeGastos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF84A80D2C2CEC42003D69DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CF84A80F2C2CEC42003D69DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CF84A8112C2CEC42003D69DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CF84A8142C2CEC42003D69DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CF84A8172C2CEC42003D69DE /* ControleDeGastos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ControleDeGastos.xcdatamodel; sourceTree = "<group>"; };
+		CF84A8192C2CEC43003D69DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF84A81C2C2CEC43003D69DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF84A81E2C2CEC43003D69DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF84A8232C2CEC43003D69DE /* ControleDeGastosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ControleDeGastosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF84A8272C2CEC43003D69DE /* ControleDeGastosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControleDeGastosTests.swift; sourceTree = "<group>"; };
+		CF84A82D2C2CEC43003D69DE /* ControleDeGastosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ControleDeGastosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF84A8312C2CEC43003D69DE /* ControleDeGastosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControleDeGastosUITests.swift; sourceTree = "<group>"; };
+		CF84A8332C2CEC43003D69DE /* ControleDeGastosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControleDeGastosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF84A8072C2CEC42003D69DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF84A8202C2CEC43003D69DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF84A82A2C2CEC43003D69DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF84A8012C2CEC42003D69DE = {
+			isa = PBXGroup;
+			children = (
+				CF84A80C2C2CEC42003D69DE /* ControleDeGastos */,
+				CF84A8262C2CEC43003D69DE /* ControleDeGastosTests */,
+				CF84A8302C2CEC43003D69DE /* ControleDeGastosUITests */,
+				CF84A80B2C2CEC42003D69DE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF84A80B2C2CEC42003D69DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF84A80A2C2CEC42003D69DE /* ControleDeGastos.app */,
+				CF84A8232C2CEC43003D69DE /* ControleDeGastosTests.xctest */,
+				CF84A82D2C2CEC43003D69DE /* ControleDeGastosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF84A80C2C2CEC42003D69DE /* ControleDeGastos */ = {
+			isa = PBXGroup;
+			children = (
+				CF84A80D2C2CEC42003D69DE /* AppDelegate.swift */,
+				CF84A80F2C2CEC42003D69DE /* SceneDelegate.swift */,
+				CF84A8112C2CEC42003D69DE /* ViewController.swift */,
+				CF84A8132C2CEC42003D69DE /* Main.storyboard */,
+				CF84A8192C2CEC43003D69DE /* Assets.xcassets */,
+				CF84A81B2C2CEC43003D69DE /* LaunchScreen.storyboard */,
+				CF84A81E2C2CEC43003D69DE /* Info.plist */,
+				CF84A8162C2CEC42003D69DE /* ControleDeGastos.xcdatamodeld */,
+			);
+			path = ControleDeGastos;
+			sourceTree = "<group>";
+		};
+		CF84A8262C2CEC43003D69DE /* ControleDeGastosTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF84A8272C2CEC43003D69DE /* ControleDeGastosTests.swift */,
+			);
+			path = ControleDeGastosTests;
+			sourceTree = "<group>";
+		};
+		CF84A8302C2CEC43003D69DE /* ControleDeGastosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CF84A8312C2CEC43003D69DE /* ControleDeGastosUITests.swift */,
+				CF84A8332C2CEC43003D69DE /* ControleDeGastosUITestsLaunchTests.swift */,
+			);
+			path = ControleDeGastosUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF84A8092C2CEC42003D69DE /* ControleDeGastos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF84A8372C2CEC43003D69DE /* Build configuration list for PBXNativeTarget "ControleDeGastos" */;
+			buildPhases = (
+				CF84A8062C2CEC42003D69DE /* Sources */,
+				CF84A8072C2CEC42003D69DE /* Frameworks */,
+				CF84A8082C2CEC42003D69DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ControleDeGastos;
+			productName = ControleDeGastos;
+			productReference = CF84A80A2C2CEC42003D69DE /* ControleDeGastos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF84A8222C2CEC43003D69DE /* ControleDeGastosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF84A83A2C2CEC43003D69DE /* Build configuration list for PBXNativeTarget "ControleDeGastosTests" */;
+			buildPhases = (
+				CF84A81F2C2CEC43003D69DE /* Sources */,
+				CF84A8202C2CEC43003D69DE /* Frameworks */,
+				CF84A8212C2CEC43003D69DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF84A8252C2CEC43003D69DE /* PBXTargetDependency */,
+			);
+			name = ControleDeGastosTests;
+			productName = ControleDeGastosTests;
+			productReference = CF84A8232C2CEC43003D69DE /* ControleDeGastosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CF84A82C2C2CEC43003D69DE /* ControleDeGastosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF84A83D2C2CEC43003D69DE /* Build configuration list for PBXNativeTarget "ControleDeGastosUITests" */;
+			buildPhases = (
+				CF84A8292C2CEC43003D69DE /* Sources */,
+				CF84A82A2C2CEC43003D69DE /* Frameworks */,
+				CF84A82B2C2CEC43003D69DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF84A82F2C2CEC43003D69DE /* PBXTargetDependency */,
+			);
+			name = ControleDeGastosUITests;
+			productName = ControleDeGastosUITests;
+			productReference = CF84A82D2C2CEC43003D69DE /* ControleDeGastosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF84A8022C2CEC42003D69DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					CF84A8092C2CEC42003D69DE = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					CF84A8222C2CEC43003D69DE = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = CF84A8092C2CEC42003D69DE;
+					};
+					CF84A82C2C2CEC43003D69DE = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = CF84A8092C2CEC42003D69DE;
+					};
+				};
+			};
+			buildConfigurationList = CF84A8052C2CEC42003D69DE /* Build configuration list for PBXProject "ControleDeGastos" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF84A8012C2CEC42003D69DE;
+			productRefGroup = CF84A80B2C2CEC42003D69DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF84A8092C2CEC42003D69DE /* ControleDeGastos */,
+				CF84A8222C2CEC43003D69DE /* ControleDeGastosTests */,
+				CF84A82C2C2CEC43003D69DE /* ControleDeGastosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF84A8082C2CEC42003D69DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF84A81D2C2CEC43003D69DE /* LaunchScreen.storyboard in Resources */,
+				CF84A81A2C2CEC43003D69DE /* Assets.xcassets in Resources */,
+				CF84A8152C2CEC42003D69DE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF84A8212C2CEC43003D69DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF84A82B2C2CEC43003D69DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF84A8062C2CEC42003D69DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF84A8122C2CEC42003D69DE /* ViewController.swift in Sources */,
+				CF84A8182C2CEC42003D69DE /* ControleDeGastos.xcdatamodeld in Sources */,
+				CF84A80E2C2CEC42003D69DE /* AppDelegate.swift in Sources */,
+				CF84A8102C2CEC42003D69DE /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF84A81F2C2CEC43003D69DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF84A8282C2CEC43003D69DE /* ControleDeGastosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF84A8292C2CEC43003D69DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF84A8342C2CEC43003D69DE /* ControleDeGastosUITestsLaunchTests.swift in Sources */,
+				CF84A8322C2CEC43003D69DE /* ControleDeGastosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF84A8252C2CEC43003D69DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF84A8092C2CEC42003D69DE /* ControleDeGastos */;
+			targetProxy = CF84A8242C2CEC43003D69DE /* PBXContainerItemProxy */;
+		};
+		CF84A82F2C2CEC43003D69DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF84A8092C2CEC42003D69DE /* ControleDeGastos */;
+			targetProxy = CF84A82E2C2CEC43003D69DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF84A8132C2CEC42003D69DE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF84A8142C2CEC42003D69DE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CF84A81B2C2CEC43003D69DE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF84A81C2C2CEC43003D69DE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF84A8352C2CEC43003D69DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF84A8362C2CEC43003D69DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF84A8382C2CEC43003D69DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ControleDeGastos/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Domingues.JoaoJose.ControleDeGastos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF84A8392C2CEC43003D69DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ControleDeGastos/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Domingues.JoaoJose.ControleDeGastos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CF84A83B2C2CEC43003D69DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Domingues.JoaoJose.ControleDeGastosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ControleDeGastos.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ControleDeGastos";
+			};
+			name = Debug;
+		};
+		CF84A83C2C2CEC43003D69DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Domingues.JoaoJose.ControleDeGastosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ControleDeGastos.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ControleDeGastos";
+			};
+			name = Release;
+		};
+		CF84A83E2C2CEC43003D69DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Domingues.JoaoJose.ControleDeGastosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ControleDeGastos;
+			};
+			name = Debug;
+		};
+		CF84A83F2C2CEC43003D69DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Domingues.JoaoJose.ControleDeGastosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ControleDeGastos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF84A8052C2CEC42003D69DE /* Build configuration list for PBXProject "ControleDeGastos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF84A8352C2CEC43003D69DE /* Debug */,
+				CF84A8362C2CEC43003D69DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF84A8372C2CEC43003D69DE /* Build configuration list for PBXNativeTarget "ControleDeGastos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF84A8382C2CEC43003D69DE /* Debug */,
+				CF84A8392C2CEC43003D69DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF84A83A2C2CEC43003D69DE /* Build configuration list for PBXNativeTarget "ControleDeGastosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF84A83B2C2CEC43003D69DE /* Debug */,
+				CF84A83C2C2CEC43003D69DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF84A83D2C2CEC43003D69DE /* Build configuration list for PBXNativeTarget "ControleDeGastosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF84A83E2C2CEC43003D69DE /* Debug */,
+				CF84A83F2C2CEC43003D69DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CF84A8162C2CEC42003D69DE /* ControleDeGastos.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CF84A8172C2CEC42003D69DE /* ControleDeGastos.xcdatamodel */,
+			);
+			currentVersion = CF84A8172C2CEC42003D69DE /* ControleDeGastos.xcdatamodel */;
+			path = ControleDeGastos.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CF84A8022C2CEC42003D69DE /* Project object */;
+}
