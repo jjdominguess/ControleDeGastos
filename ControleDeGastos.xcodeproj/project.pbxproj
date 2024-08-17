@@ -7,16 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		87FEDAE0418DF75925B19270 /* Pods_ControleDeGastos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 777E42CE53FFB2B42994166B /* Pods_ControleDeGastos.framework */; };
+		CF793D5C2C55716800872A61 /* CellCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF793D5B2C55716800872A61 /* CellCollectionView.swift */; };
 		CF84A80E2C2CEC42003D69DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF84A80D2C2CEC42003D69DE /* AppDelegate.swift */; };
 		CF84A8102C2CEC42003D69DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF84A80F2C2CEC42003D69DE /* SceneDelegate.swift */; };
-		CF84A8122C2CEC42003D69DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF84A8112C2CEC42003D69DE /* ViewController.swift */; };
-		CF84A8152C2CEC42003D69DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF84A8132C2CEC42003D69DE /* Main.storyboard */; };
 		CF84A8182C2CEC42003D69DE /* ControleDeGastos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CF84A8162C2CEC42003D69DE /* ControleDeGastos.xcdatamodeld */; };
 		CF84A81A2C2CEC43003D69DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF84A8192C2CEC43003D69DE /* Assets.xcassets */; };
-		CF84A81D2C2CEC43003D69DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF84A81B2C2CEC43003D69DE /* LaunchScreen.storyboard */; };
 		CF84A8282C2CEC43003D69DE /* ControleDeGastosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF84A8272C2CEC43003D69DE /* ControleDeGastosTests.swift */; };
 		CF84A8322C2CEC43003D69DE /* ControleDeGastosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF84A8312C2CEC43003D69DE /* ControleDeGastosUITests.swift */; };
 		CF84A8342C2CEC43003D69DE /* ControleDeGastosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF84A8332C2CEC43003D69DE /* ControleDeGastosUITestsLaunchTests.swift */; };
+		CF84A8412C2CED88003D69DE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF84A8402C2CED88003D69DE /* LoginViewController.swift */; };
+		CF8D2F3A2C715F76007FDBD1 /* LoginInteractorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8D2F392C715F76007FDBD1 /* LoginInteractorController.swift */; };
+		CF9825212C70F7AF00783930 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9825202C70F7AF00783930 /* DetailViewController.swift */; };
+		CFB4CF4D2C39CF3D00A08415 /* CollectionMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB4CF4C2C39CF3D00A08415 /* CollectionMainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,20 +40,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		29E355D6197D6DBC86346EB4 /* Pods-ControleDeGastos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ControleDeGastos.release.xcconfig"; path = "Target Support Files/Pods-ControleDeGastos/Pods-ControleDeGastos.release.xcconfig"; sourceTree = "<group>"; };
+		72DA408D1E75D7C7A0E4FD14 /* Pods-ControleDeGastos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ControleDeGastos.debug.xcconfig"; path = "Target Support Files/Pods-ControleDeGastos/Pods-ControleDeGastos.debug.xcconfig"; sourceTree = "<group>"; };
+		777E42CE53FFB2B42994166B /* Pods_ControleDeGastos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ControleDeGastos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF793D5B2C55716800872A61 /* CellCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCollectionView.swift; sourceTree = "<group>"; };
 		CF84A80A2C2CEC42003D69DE /* ControleDeGastos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ControleDeGastos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF84A80D2C2CEC42003D69DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF84A80F2C2CEC42003D69DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CF84A8112C2CEC42003D69DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CF84A8142C2CEC42003D69DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CF84A8172C2CEC42003D69DE /* ControleDeGastos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ControleDeGastos.xcdatamodel; sourceTree = "<group>"; };
 		CF84A8192C2CEC43003D69DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CF84A81C2C2CEC43003D69DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF84A81E2C2CEC43003D69DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF84A8232C2CEC43003D69DE /* ControleDeGastosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ControleDeGastosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF84A8272C2CEC43003D69DE /* ControleDeGastosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControleDeGastosTests.swift; sourceTree = "<group>"; };
 		CF84A82D2C2CEC43003D69DE /* ControleDeGastosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ControleDeGastosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF84A8312C2CEC43003D69DE /* ControleDeGastosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControleDeGastosUITests.swift; sourceTree = "<group>"; };
 		CF84A8332C2CEC43003D69DE /* ControleDeGastosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControleDeGastosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CF84A8402C2CED88003D69DE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CF8D2F392C715F76007FDBD1 /* LoginInteractorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractorController.swift; sourceTree = "<group>"; };
+		CF9825202C70F7AF00783930 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		CFB4CF4C2C39CF3D00A08415 /* CollectionMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionMainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87FEDAE0418DF75925B19270 /* Pods_ControleDeGastos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +87,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B352C37C058D5859D5BBEACB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				72DA408D1E75D7C7A0E4FD14 /* Pods-ControleDeGastos.debug.xcconfig */,
+				29E355D6197D6DBC86346EB4 /* Pods-ControleDeGastos.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BA4F1B1D9ACC3C049027144F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				777E42CE53FFB2B42994166B /* Pods_ControleDeGastos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF793D5D2C558C6400872A61 /* CellCollection */ = {
+			isa = PBXGroup;
+			children = (
+				CF793D5B2C55716800872A61 /* CellCollectionView.swift */,
+			);
+			path = CellCollection;
+			sourceTree = "<group>";
+		};
 		CF84A8012C2CEC42003D69DE = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +119,8 @@
 				CF84A8262C2CEC43003D69DE /* ControleDeGastosTests */,
 				CF84A8302C2CEC43003D69DE /* ControleDeGastosUITests */,
 				CF84A80B2C2CEC42003D69DE /* Products */,
+				B352C37C058D5859D5BBEACB /* Pods */,
+				BA4F1B1D9ACC3C049027144F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,10 +139,9 @@
 			children = (
 				CF84A80D2C2CEC42003D69DE /* AppDelegate.swift */,
 				CF84A80F2C2CEC42003D69DE /* SceneDelegate.swift */,
-				CF84A8112C2CEC42003D69DE /* ViewController.swift */,
-				CF84A8132C2CEC42003D69DE /* Main.storyboard */,
+				CF9825222C7143AB00783930 /* LoginModelView */,
+				CF9825232C7143E500783930 /* MainViewModel */,
 				CF84A8192C2CEC43003D69DE /* Assets.xcassets */,
-				CF84A81B2C2CEC43003D69DE /* LaunchScreen.storyboard */,
 				CF84A81E2C2CEC43003D69DE /* Info.plist */,
 				CF84A8162C2CEC42003D69DE /* ControleDeGastos.xcdatamodeld */,
 			);
@@ -130,6 +165,25 @@
 			path = ControleDeGastosUITests;
 			sourceTree = "<group>";
 		};
+		CF9825222C7143AB00783930 /* LoginModelView */ = {
+			isa = PBXGroup;
+			children = (
+				CF84A8402C2CED88003D69DE /* LoginViewController.swift */,
+				CF8D2F392C715F76007FDBD1 /* LoginInteractorController.swift */,
+			);
+			path = LoginModelView;
+			sourceTree = "<group>";
+		};
+		CF9825232C7143E500783930 /* MainViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CF793D5D2C558C6400872A61 /* CellCollection */,
+				CFB4CF4C2C39CF3D00A08415 /* CollectionMainViewController.swift */,
+				CF9825202C70F7AF00783930 /* DetailViewController.swift */,
+			);
+			path = MainViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +191,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF84A8372C2CEC43003D69DE /* Build configuration list for PBXNativeTarget "ControleDeGastos" */;
 			buildPhases = (
+				4F1F7C5534D08BE30DB74800 /* [CP] Check Pods Manifest.lock */,
 				CF84A8062C2CEC42003D69DE /* Sources */,
 				CF84A8072C2CEC42003D69DE /* Frameworks */,
 				CF84A8082C2CEC42003D69DE /* Resources */,
+				469D6125A43FF1F908E95ADC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,9 +290,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF84A81D2C2CEC43003D69DE /* LaunchScreen.storyboard in Resources */,
 				CF84A81A2C2CEC43003D69DE /* Assets.xcassets in Resources */,
-				CF84A8152C2CEC42003D69DE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,15 +310,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		469D6125A43FF1F908E95ADC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ControleDeGastos/Pods-ControleDeGastos-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ControleDeGastos/Pods-ControleDeGastos-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ControleDeGastos/Pods-ControleDeGastos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F1F7C5534D08BE30DB74800 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ControleDeGastos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CF84A8062C2CEC42003D69DE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF84A8122C2CEC42003D69DE /* ViewController.swift in Sources */,
+				CF793D5C2C55716800872A61 /* CellCollectionView.swift in Sources */,
 				CF84A8182C2CEC42003D69DE /* ControleDeGastos.xcdatamodeld in Sources */,
+				CF8D2F3A2C715F76007FDBD1 /* LoginInteractorController.swift in Sources */,
+				CFB4CF4D2C39CF3D00A08415 /* CollectionMainViewController.swift in Sources */,
 				CF84A80E2C2CEC42003D69DE /* AppDelegate.swift in Sources */,
+				CF84A8412C2CED88003D69DE /* LoginViewController.swift in Sources */,
 				CF84A8102C2CEC42003D69DE /* SceneDelegate.swift in Sources */,
+				CF9825212C70F7AF00783930 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,25 +399,6 @@
 			targetProxy = CF84A82E2C2CEC43003D69DE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		CF84A8132C2CEC42003D69DE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CF84A8142C2CEC42003D69DE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		CF84A81B2C2CEC43003D69DE /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CF84A81C2C2CEC43003D69DE /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CF84A8352C2CEC43003D69DE /* Debug */ = {
@@ -436,6 +517,7 @@
 		};
 		CF84A8382C2CEC43003D69DE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72DA408D1E75D7C7A0E4FD14 /* Pods-ControleDeGastos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -445,7 +527,7 @@
 				INFOPLIST_FILE = ControleDeGastos/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -463,6 +545,7 @@
 		};
 		CF84A8392C2CEC43003D69DE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29E355D6197D6DBC86346EB4 /* Pods-ControleDeGastos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -472,7 +555,7 @@
 				INFOPLIST_FILE = ControleDeGastos/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
