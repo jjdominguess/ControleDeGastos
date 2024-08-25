@@ -11,9 +11,9 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
-    let collectionMainViewController = CollectionMainViewController()
-  
-    private let usernameTextField: UITextField = {
+    
+    
+    private let userEmailTextField: UITextField = {
         let textField = UITextField()
         textField.placeholder = "Username"
         textField.borderStyle = .roundedRect
@@ -59,20 +59,20 @@ class LoginViewController: UIViewController {
   
     private func setupFieldViews() {
         
-        view.addSubview(usernameTextField)
+        view.addSubview(userEmailTextField)
         view.addSubview(passwordTextField)
         view.addSubview(loginButton)
         view.addSubview(exitButton)
         
-        usernameTextField.translatesAutoresizingMaskIntoConstraints = false
+        userEmailTextField.translatesAutoresizingMaskIntoConstraints = false
         passwordTextField.translatesAutoresizingMaskIntoConstraints = false
         loginButton.translatesAutoresizingMaskIntoConstraints = false
         exitButton.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            usernameTextField.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            usernameTextField.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -30),
-            usernameTextField.widthAnchor.constraint(equalToConstant: 200),
+            userEmailTextField.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            userEmailTextField.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -30),
+            userEmailTextField.widthAnchor.constraint(equalToConstant: 200),
             
             passwordTextField.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             passwordTextField.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 20),
@@ -104,11 +104,27 @@ class LoginViewController: UIViewController {
     }
         
     @objc func loginButtonTapped() {
+        let collectionMainViewController = CollectionMainViewController()
+        let loginInteractor = LoginInteractorController(email: getUserEmail(), password: getUserPassword())
+
+        loginInteractor.emailValidate()
+
         navigationController?.pushViewController(collectionMainViewController, animated: true)
+        
     }
     
     @objc func exitButtonTapped() {
         print("Click exit button")
     }
     
+    func getUserEmail() -> String {
+        let userEmail = userEmailTextField.text ?? ""
+        return userEmail
+    }
+    
+    func getUserPassword() -> String {
+        let userPassword = passwordTextField.text ?? ""
+        return userPassword
+    }
+
 }
