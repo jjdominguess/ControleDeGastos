@@ -8,14 +8,18 @@
 import Foundation
 import UIKit
 
-
 class LoginViewController: UIViewController {
-    
-    
+
+    private let backgroundImage: UIImageView = {
+        let image = UIImageView()
+        image.contentMode = .scaleAspectFill
+        image.clipsToBounds = true
+        return image
+    }()
     
     private let userEmailTextField: UITextField = {
         let textField = UITextField()
-        textField.placeholder = "Username"
+        textField.placeholder = "Email"
         textField.borderStyle = .roundedRect
         return textField
     }()
@@ -24,6 +28,7 @@ class LoginViewController: UIViewController {
         let passwordField = UITextField()
         passwordField.placeholder = "Password"
         passwordField.borderStyle = .roundedRect
+        passwordField.isSecureTextEntry = true // para ofuscar os caracteres inseridos no campo senha
         return passwordField
     }()
     
@@ -35,25 +40,10 @@ class LoginViewController: UIViewController {
         button.tintColor = .black
         return button
     }()
-    // Remover botão exit
-    private let exitButton: UIButton = {
-        let button = UIButton(type: .system)
-        button.setTitle("Exit", for: .normal)
-        button.addTarget(LoginViewController.self, action: #selector(exitButtonTapped), for: .touchUpInside)
-        return button
-    }()
-
-    private let backgroundImage: UIImageView = {
-        let image = UIImageView()
-        image.contentMode = .scaleAspectFill
-        image.clipsToBounds = true
-        return image
-    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         backgroundImageCoordinates()
-        //view.backgroundColor = .white
         setupFieldViews()
     }
   
@@ -62,12 +52,10 @@ class LoginViewController: UIViewController {
         view.addSubview(userEmailTextField)
         view.addSubview(passwordTextField)
         view.addSubview(loginButton)
-        view.addSubview(exitButton)
         
         userEmailTextField.translatesAutoresizingMaskIntoConstraints = false
         passwordTextField.translatesAutoresizingMaskIntoConstraints = false
         loginButton.translatesAutoresizingMaskIntoConstraints = false
-        exitButton.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
             userEmailTextField.centerXAnchor.constraint(equalTo: view.centerXAnchor),
@@ -79,13 +67,7 @@ class LoginViewController: UIViewController {
             passwordTextField.widthAnchor.constraint(equalToConstant: 200),
             
             loginButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            loginButton.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 20),
-            
-            exitButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
-            exitButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -16),
-            exitButton.widthAnchor.constraint(equalToConstant: 100),
-            exitButton.heightAnchor.constraint(equalToConstant: 44)
-            
+            loginButton.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 20)
         ])
     }
     
@@ -110,11 +92,6 @@ class LoginViewController: UIViewController {
         loginInteractor.emailValidate()
 
         navigationController?.pushViewController(collectionMainViewController, animated: true)
-        
-    }
-    
-    @objc func exitButtonTapped() {
-        print("Click exit button")
     }
     
     func getUserEmail() -> String {

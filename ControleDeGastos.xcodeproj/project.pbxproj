@@ -18,6 +18,8 @@
 		CF84A8342C2CEC43003D69DE /* ControleDeGastosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF84A8332C2CEC43003D69DE /* ControleDeGastosUITestsLaunchTests.swift */; };
 		CF84A8412C2CED88003D69DE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF84A8402C2CED88003D69DE /* LoginViewController.swift */; };
 		CF8D2F3A2C715F76007FDBD1 /* LoginInteractorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8D2F392C715F76007FDBD1 /* LoginInteractorController.swift */; };
+		CF8D8DD32C7BBE740044CE34 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8D8DD22C7BBE740044CE34 /* SignInViewController.swift */; };
+		CF8D8DD52C7BBE850044CE34 /* SignInInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8D8DD42C7BBE850044CE34 /* SignInInteractor.swift */; };
 		CF9825212C70F7AF00783930 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9825202C70F7AF00783930 /* DetailViewController.swift */; };
 		CFB4CF4D2C39CF3D00A08415 /* CollectionMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB4CF4C2C39CF3D00A08415 /* CollectionMainViewController.swift */; };
 /* End PBXBuildFile section */
@@ -57,6 +59,8 @@
 		CF84A8332C2CEC43003D69DE /* ControleDeGastosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControleDeGastosUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CF84A8402C2CED88003D69DE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CF8D2F392C715F76007FDBD1 /* LoginInteractorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractorController.swift; sourceTree = "<group>"; };
+		CF8D8DD22C7BBE740044CE34 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		CF8D8DD42C7BBE850044CE34 /* SignInInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInInteractor.swift; sourceTree = "<group>"; };
 		CF9825202C70F7AF00783930 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		CFB4CF4C2C39CF3D00A08415 /* CollectionMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionMainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,6 +144,7 @@
 				CF84A80D2C2CEC42003D69DE /* AppDelegate.swift */,
 				CF84A80F2C2CEC42003D69DE /* SceneDelegate.swift */,
 				CF9825222C7143AB00783930 /* LoginModelView */,
+				CF8D8DD12C7BBE1A0044CE34 /* SignInView */,
 				CF9825232C7143E500783930 /* MainViewModel */,
 				CF84A8192C2CEC43003D69DE /* Assets.xcassets */,
 				CF84A81E2C2CEC43003D69DE /* Info.plist */,
@@ -163,6 +168,15 @@
 				CF84A8332C2CEC43003D69DE /* ControleDeGastosUITestsLaunchTests.swift */,
 			);
 			path = ControleDeGastosUITests;
+			sourceTree = "<group>";
+		};
+		CF8D8DD12C7BBE1A0044CE34 /* SignInView */ = {
+			isa = PBXGroup;
+			children = (
+				CF8D8DD22C7BBE740044CE34 /* SignInViewController.swift */,
+				CF8D8DD42C7BBE850044CE34 /* SignInInteractor.swift */,
+			);
+			path = SignInView;
 			sourceTree = "<group>";
 		};
 		CF9825222C7143AB00783930 /* LoginModelView */ = {
@@ -362,6 +376,8 @@
 				CF8D2F3A2C715F76007FDBD1 /* LoginInteractorController.swift in Sources */,
 				CFB4CF4D2C39CF3D00A08415 /* CollectionMainViewController.swift in Sources */,
 				CF84A80E2C2CEC42003D69DE /* AppDelegate.swift in Sources */,
+				CF8D8DD32C7BBE740044CE34 /* SignInViewController.swift in Sources */,
+				CF8D8DD52C7BBE850044CE34 /* SignInInteractor.swift in Sources */,
 				CF84A8412C2CED88003D69DE /* LoginViewController.swift in Sources */,
 				CF84A8102C2CEC42003D69DE /* SceneDelegate.swift in Sources */,
 				CF9825212C70F7AF00783930 /* DetailViewController.swift in Sources */,
