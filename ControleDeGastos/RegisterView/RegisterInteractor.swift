@@ -7,6 +7,6 @@
 
 import Foundation
 
-class SignInInteractor {
+class RegisterInteractor {
     
 }
