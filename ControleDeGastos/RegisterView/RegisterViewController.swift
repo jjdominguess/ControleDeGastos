@@ -88,5 +88,23 @@ class RegisterViewController: UIViewController {
     @objc func buttonCreateTapped() {
         let loginViewController = LoginViewController()
         navigationController?.pushViewController(loginViewController, animated: false)
+        
+        let registerInteractor = RegisterInteractor(email: getUserEmail(), password: getUserPassword())
+        registerInteractor.createUser()
+        //pensar em como limpar o campo
+        
     }
+    
+// MARK: - Envio de informações
+    
+    func getUserEmail() -> String {
+        let email = emailField.text ?? ""
+        return email
+    }
+    
+    func getUserPassword() -> String {
+        let password = passwordCreate.text ?? ""
+        return password
+    }
+    
 }

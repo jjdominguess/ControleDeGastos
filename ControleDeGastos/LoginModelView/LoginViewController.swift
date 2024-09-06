@@ -7,6 +7,8 @@
 
 import Foundation
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class LoginViewController: UIViewController {
 
@@ -98,12 +100,10 @@ class LoginViewController: UIViewController {
     }
 // MARK: - Botões
     @objc func loginButtonTapped() {
-        let collectionMainViewController = CollectionMainViewController()
-        let loginInteractor = LoginInteractorController(email: getUserEmail(), password: getUserPassword())
+        //let collectionMainViewController = CollectionMainViewController()
+        let loginInteractor = LoginInteractorController(emailFromLVC: getUserEmail(), passwordFromLVC: getUserPassword())
 
         loginInteractor.emailValidate()
-
-        navigationController?.pushViewController(collectionMainViewController, animated: true)
     }
    
     @objc func registerButtonTapped() {

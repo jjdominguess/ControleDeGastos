@@ -10,15 +10,16 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
+
 class LoginInteractorController: UIViewController {
     //let loginViewController = LoginViewController()
     
     var email: String
     var password: String
     
-    init(email: String, password: String) {
-        self.email = email
-        self.password = password
+    init(emailFromLVC: String, passwordFromLVC: String) {
+        self.email = emailFromLVC
+        self.password = passwordFromLVC
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -27,9 +28,20 @@ class LoginInteractorController: UIViewController {
     }
     
     func emailValidate() {
-        //Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
-          //guard let strongSelf = self else { return }
-          // ...
-        //}
+        
+        let collectionMainViewController = CollectionMainViewController()
+        let email = email
+        let password = password
+        
+        Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
+            
+            if let e = error {
+                print(e.localizedDescription)
+            } else {
+                print("Autenticação realizada com sucesso.")
+                self?.navigationController?.pushViewController(collectionMainViewController, animated: true)
+            }
+            
+        }
     }
 }

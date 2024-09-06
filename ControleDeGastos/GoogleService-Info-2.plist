@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyCbDm8AcgALtGZV7rm-zq4kI8CQAtnb6CA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>839076317099</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>JJ-ControleDeGastos</string>
+	<key>PROJECT_ID</key>
+	<string>jj-controlesdegastos</string>
+	<key>STORAGE_BUCKET</key>
+	<string>jj-controlesdegastos.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:839076317099:ios:652d820d00402c9cee34ee</string>
+</dict>
+</plist>

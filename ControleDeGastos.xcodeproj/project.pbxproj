@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		87FEDAE0418DF75925B19270 /* Pods_ControleDeGastos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 777E42CE53FFB2B42994166B /* Pods_ControleDeGastos.framework */; };
+		CF6BE67C2C8A89CC00A96E43 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF6BE67B2C8A89CC00A96E43 /* GoogleService-Info.plist */; };
 		CF793D5C2C55716800872A61 /* CellCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF793D5B2C55716800872A61 /* CellCollectionView.swift */; };
 		CF84A80E2C2CEC42003D69DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF84A80D2C2CEC42003D69DE /* AppDelegate.swift */; };
 		CF84A8102C2CEC42003D69DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF84A80F2C2CEC42003D69DE /* SceneDelegate.swift */; };
@@ -45,6 +46,7 @@
 		29E355D6197D6DBC86346EB4 /* Pods-ControleDeGastos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ControleDeGastos.release.xcconfig"; path = "Target Support Files/Pods-ControleDeGastos/Pods-ControleDeGastos.release.xcconfig"; sourceTree = "<group>"; };
 		72DA408D1E75D7C7A0E4FD14 /* Pods-ControleDeGastos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ControleDeGastos.debug.xcconfig"; path = "Target Support Files/Pods-ControleDeGastos/Pods-ControleDeGastos.debug.xcconfig"; sourceTree = "<group>"; };
 		777E42CE53FFB2B42994166B /* Pods_ControleDeGastos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ControleDeGastos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF6BE67B2C8A89CC00A96E43 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CF793D5B2C55716800872A61 /* CellCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCollectionView.swift; sourceTree = "<group>"; };
 		CF84A80A2C2CEC42003D69DE /* ControleDeGastos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ControleDeGastos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF84A80D2C2CEC42003D69DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				CF9825232C7143E500783930 /* MainViewModel */,
 				CF84A8192C2CEC43003D69DE /* Assets.xcassets */,
 				CF84A81E2C2CEC43003D69DE /* Info.plist */,
+				CF6BE67B2C8A89CC00A96E43 /* GoogleService-Info.plist */,
 				CF84A8162C2CEC42003D69DE /* ControleDeGastos.xcdatamodeld */,
 			);
 			path = ControleDeGastos;
@@ -305,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF84A81A2C2CEC43003D69DE /* Assets.xcassets in Resources */,
+				CF6BE67C2C8A89CC00A96E43 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
