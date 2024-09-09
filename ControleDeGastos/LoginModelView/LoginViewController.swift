@@ -104,6 +104,7 @@ class LoginViewController: UIViewController {
         let loginInteractor = LoginInteractorController(emailFromLVC: getUserEmail(), passwordFromLVC: getUserPassword())
 
         loginInteractor.emailValidate()
+        //a
     }
    
     @objc func registerButtonTapped() {
