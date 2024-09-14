@@ -110,7 +110,7 @@ class LoginViewController: UIViewController {
         interactor?.email = getUserEmail()
         interactor?.password = getUserPassword()
         
-        loginInteractor.emailValidate()
+        interactor?.emailValidate()
     }
    
     @objc func registerButtonTapped() {

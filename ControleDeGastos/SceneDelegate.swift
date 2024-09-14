@@ -12,6 +12,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let presenter = LoginPresenter()
         let rootViewController = LoginViewController() // Tela de Login
         
+        rootViewController.interactor = interactor
         interactor.presenter = presenter
         presenter.loginViewController = rootViewController
         
