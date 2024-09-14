@@ -12,6 +12,8 @@ import FirebaseAuth
 
 class LoginViewController: UIViewController {
 
+    let collectionMainViewController = CollectionMainViewController()
+    
     private let backgroundImage: UIImageView = {
         let image = UIImageView()
         image.contentMode = .scaleAspectFill
@@ -98,19 +100,21 @@ class LoginViewController: UIViewController {
             backgroundImage.trailingAnchor.constraint(equalTo: view.trailingAnchor)
         ])
     }
+    
+    
 // MARK: - Botões
     @objc func loginButtonTapped() {
-        //let collectionMainViewController = CollectionMainViewController()
-        let loginInteractor = LoginInteractorController(emailFromLVC: getUserEmail(), passwordFromLVC: getUserPassword())
-
+        
+        let loginInteractor = LoginInteractor(email: getUserEmail(), password: getUserPassword())
         loginInteractor.emailValidate()
-        //a
     }
    
     @objc func registerButtonTapped() {
         let registerViewController = RegisterViewController()
         navigationController?.pushViewController(registerViewController, animated: false)
     }
+    
+    
 // MARK: - Envio de informações
     
     func getUserEmail() -> String {
@@ -123,4 +127,9 @@ class LoginViewController: UIViewController {
         return userPassword
     }
 
+    // MARK: - puxar tela
+    
+    func pushCollectioView() {
+        self.navigationController?.pushViewController(collectionMainViewController, animated: true)
+    }
 }

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		87FEDAE0418DF75925B19270 /* Pods_ControleDeGastos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 777E42CE53FFB2B42994166B /* Pods_ControleDeGastos.framework */; };
+		CF62FE1D2C93B60B00F3DEAA /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF62FE1C2C93B60B00F3DEAA /* LoginPresenter.swift */; };
+		CF62FE1F2C93B6D100F3DEAA /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF62FE1E2C93B6D100F3DEAA /* RegisterPresenter.swift */; };
 		CF6BE67C2C8A89CC00A96E43 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF6BE67B2C8A89CC00A96E43 /* GoogleService-Info.plist */; };
 		CF793D5C2C55716800872A61 /* CellCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF793D5B2C55716800872A61 /* CellCollectionView.swift */; };
 		CF84A80E2C2CEC42003D69DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF84A80D2C2CEC42003D69DE /* AppDelegate.swift */; };
@@ -18,7 +20,7 @@
 		CF84A8322C2CEC43003D69DE /* ControleDeGastosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF84A8312C2CEC43003D69DE /* ControleDeGastosUITests.swift */; };
 		CF84A8342C2CEC43003D69DE /* ControleDeGastosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF84A8332C2CEC43003D69DE /* ControleDeGastosUITestsLaunchTests.swift */; };
 		CF84A8412C2CED88003D69DE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF84A8402C2CED88003D69DE /* LoginViewController.swift */; };
-		CF8D2F3A2C715F76007FDBD1 /* LoginInteractorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8D2F392C715F76007FDBD1 /* LoginInteractorController.swift */; };
+		CF8D2F3A2C715F76007FDBD1 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8D2F392C715F76007FDBD1 /* LoginInteractor.swift */; };
 		CF8D8DD32C7BBE740044CE34 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8D8DD22C7BBE740044CE34 /* RegisterViewController.swift */; };
 		CF8D8DD52C7BBE850044CE34 /* RegisterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8D8DD42C7BBE850044CE34 /* RegisterInteractor.swift */; };
 		CF9825212C70F7AF00783930 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9825202C70F7AF00783930 /* DetailViewController.swift */; };
@@ -46,6 +48,8 @@
 		29E355D6197D6DBC86346EB4 /* Pods-ControleDeGastos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ControleDeGastos.release.xcconfig"; path = "Target Support Files/Pods-ControleDeGastos/Pods-ControleDeGastos.release.xcconfig"; sourceTree = "<group>"; };
 		72DA408D1E75D7C7A0E4FD14 /* Pods-ControleDeGastos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ControleDeGastos.debug.xcconfig"; path = "Target Support Files/Pods-ControleDeGastos/Pods-ControleDeGastos.debug.xcconfig"; sourceTree = "<group>"; };
 		777E42CE53FFB2B42994166B /* Pods_ControleDeGastos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ControleDeGastos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF62FE1C2C93B60B00F3DEAA /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		CF62FE1E2C93B6D100F3DEAA /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
 		CF6BE67B2C8A89CC00A96E43 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CF793D5B2C55716800872A61 /* CellCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCollectionView.swift; sourceTree = "<group>"; };
 		CF84A80A2C2CEC42003D69DE /* ControleDeGastos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ControleDeGastos.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,7 +64,7 @@
 		CF84A8312C2CEC43003D69DE /* ControleDeGastosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControleDeGastosUITests.swift; sourceTree = "<group>"; };
 		CF84A8332C2CEC43003D69DE /* ControleDeGastosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControleDeGastosUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CF84A8402C2CED88003D69DE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		CF8D2F392C715F76007FDBD1 /* LoginInteractorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractorController.swift; sourceTree = "<group>"; };
+		CF8D2F392C715F76007FDBD1 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
 		CF8D8DD22C7BBE740044CE34 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		CF8D8DD42C7BBE850044CE34 /* RegisterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterInteractor.swift; sourceTree = "<group>"; };
 		CF9825202C70F7AF00783930 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -178,6 +182,7 @@
 			children = (
 				CF8D8DD22C7BBE740044CE34 /* RegisterViewController.swift */,
 				CF8D8DD42C7BBE850044CE34 /* RegisterInteractor.swift */,
+				CF62FE1E2C93B6D100F3DEAA /* RegisterPresenter.swift */,
 			);
 			path = RegisterView;
 			sourceTree = "<group>";
@@ -186,7 +191,8 @@
 			isa = PBXGroup;
 			children = (
 				CF84A8402C2CED88003D69DE /* LoginViewController.swift */,
-				CF8D2F392C715F76007FDBD1 /* LoginInteractorController.swift */,
+				CF8D2F392C715F76007FDBD1 /* LoginInteractor.swift */,
+				CF62FE1C2C93B60B00F3DEAA /* LoginPresenter.swift */,
 			);
 			path = LoginModelView;
 			sourceTree = "<group>";
@@ -375,12 +381,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF62FE1D2C93B60B00F3DEAA /* LoginPresenter.swift in Sources */,
 				CF793D5C2C55716800872A61 /* CellCollectionView.swift in Sources */,
 				CF84A8182C2CEC42003D69DE /* ControleDeGastos.xcdatamodeld in Sources */,
-				CF8D2F3A2C715F76007FDBD1 /* LoginInteractorController.swift in Sources */,
+				CF8D2F3A2C715F76007FDBD1 /* LoginInteractor.swift in Sources */,
 				CFB4CF4D2C39CF3D00A08415 /* CollectionMainViewController.swift in Sources */,
 				CF84A80E2C2CEC42003D69DE /* AppDelegate.swift in Sources */,
 				CF8D8DD32C7BBE740044CE34 /* RegisterViewController.swift in Sources */,
+				CF62FE1F2C93B6D100F3DEAA /* RegisterPresenter.swift in Sources */,
 				CF8D8DD52C7BBE850044CE34 /* RegisterInteractor.swift in Sources */,
 				CF84A8412C2CED88003D69DE /* LoginViewController.swift in Sources */,
 				CF84A8102C2CEC42003D69DE /* SceneDelegate.swift in Sources */,
