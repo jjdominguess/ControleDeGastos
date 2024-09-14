@@ -7,19 +7,13 @@
 
 import FirebaseAuth
 
-
-class LoginInteractor: UIViewController {
+class LoginInteractor {
     
-    var presenter = LoginPresenter()// preciso entender a diferença caso eu colocasse "var presenter: LoginPresente?"
+    var presenter: LoginPresenter?
+    // preciso entender a diferença caso eu colocasse "var presenter: LoginPresente?"
     
-    let email: String
-    let password: String
-    
-    init(email: String, password: String) {
-        self.email = email
-        self.password = password
-        super.init(nibName: nil, bundle: nil)
-    }
+    var email: String = ""
+    var password: String = ""
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -33,9 +27,9 @@ class LoginInteractor: UIViewController {
         Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
             
             if let e = error {
-                self.presenter.loginError(error: e.localizedDescription as! Error)
+                self.presenter?.loginError(error: e.localizedDescription as! Error)
             } else {
-                self.presenter.loginSucess()
+                self.presenter?.loginSucess()
             }
             
         }

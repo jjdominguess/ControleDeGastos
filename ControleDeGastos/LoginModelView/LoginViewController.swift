@@ -12,6 +12,8 @@ import FirebaseAuth
 
 class LoginViewController: UIViewController {
 
+    var interactor: LoginInteractor?
+    
     let collectionMainViewController = CollectionMainViewController()
     
     private let backgroundImage: UIImageView = {
@@ -58,7 +60,7 @@ class LoginViewController: UIViewController {
         backgroundImageCoordinates()
         setupFieldViews()
     }
-  
+    
     private func setupFieldViews() {
         
         view.addSubview(userEmailTextField)
@@ -105,7 +107,9 @@ class LoginViewController: UIViewController {
 // MARK: - Botões
     @objc func loginButtonTapped() {
         
-        let loginInteractor = LoginInteractor(email: getUserEmail(), password: getUserPassword())
+        interactor?.email = getUserEmail()
+        interactor?.password = getUserPassword()
+        
         loginInteractor.emailValidate()
     }
    

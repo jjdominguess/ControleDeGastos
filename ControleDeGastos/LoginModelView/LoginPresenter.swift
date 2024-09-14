@@ -9,11 +9,11 @@ import Foundation
 import UIKit
 
 class LoginPresenter: UIViewController {
-    let loginViewController = LoginViewController()
+    var loginViewController: LoginViewController?
  
     func loginSucess() {
         print("Autenticação realizada com sucesso.")
-        loginViewController.pushCollectioView()
+        loginViewController?.pushCollectioView()
     }
     
     func loginError(error: Error) {
