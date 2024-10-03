@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class DetailViewController: UIViewController {
+class DetailCellViewController: UIViewController {
     
     var selectedItemIndex: Int?
     
@@ -20,6 +20,4 @@ class DetailViewController: UIViewController {
             self.title = "Detalhes do Item \(index)"
         }
     }
-    
-    
 }

@@ -7,10 +7,12 @@
 
 import Foundation
 import UIKit
-import Firebase
-import FirebaseAuth
 
-class LoginViewController: UIViewController {
+protocol LoginViewControllerDelegate {
+    func pushCollectionView()
+}
+
+class LoginViewController: UIViewController, LoginViewControllerDelegate {
 
     var interactor: LoginInteractor?
     
@@ -115,7 +117,7 @@ class LoginViewController: UIViewController {
    
     @objc func registerButtonTapped() {
         let registerViewController = RegisterViewController()
-        navigationController?.pushViewController(registerViewController, animated: false)
+        navigationController?.pushViewController(registerViewController, animated: true)
     }
     
     
@@ -133,7 +135,7 @@ class LoginViewController: UIViewController {
 
     // MARK: - puxar tela
     
-    func pushCollectioView() {
+    func pushCollectionView() {
         self.navigationController?.pushViewController(collectionMainViewController, animated: true)
     }
 }

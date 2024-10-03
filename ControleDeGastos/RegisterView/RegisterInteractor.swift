@@ -8,8 +8,14 @@
 import Foundation
 import Firebase
 
+protocol RegisterInteractorDelegate {
+    func createUser()
+}
+
 class RegisterInteractor: UIViewController {
     
+    let register = RegisterViewController()
+    let registerPresenter = RegisterPresenter()
     
     var emailFromVC: String
     var passwordFromVC: String
@@ -20,28 +26,20 @@ class RegisterInteractor: UIViewController {
         super.init(nibName: nil, bundle: nil)
     }
     
-    
-    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    let register = RegisterViewController()
     
     func createUser() {
         let loginViewController = LoginViewController()
         let email = emailFromVC
         let password = passwordFromVC
         
-        Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+        Auth.auth().createUser(withEmail: email, password: password) { [self] authResult, error in
             if let e = error {
                 print(e.localizedDescription)
             } else {
-                print("Registro concluído.")
-                
-                DispatchQueue.main.async {
-                    self.navigationController?.pushViewController(loginViewController, animated: true)
-                }
+                registerPresenter.callViewController()
             }            
         }
     }

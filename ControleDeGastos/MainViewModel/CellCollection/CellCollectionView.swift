@@ -26,7 +26,6 @@ class CellViewConfig: UICollectionViewCell {
     }()
     */
     
-    
     private let backgroundImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
@@ -75,7 +74,5 @@ class CellViewConfig: UICollectionViewCell {
     func configure(with iconImage: UIImage?, backgroundImage: UIImage?) {
         iconImageCell.image = iconImage
         backgroundImageView.image = backgroundImage
-        
-        
     }
 }

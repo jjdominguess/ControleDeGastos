@@ -7,3 +7,17 @@
 
 import Foundation
 
+protocol RegisterPresenterDelegate {
+    func callViewController()
+}
+
+class RegisterPresenter: RegisterPresenterDelegate {
+    
+    let registerViewController = RegisterViewController()
+    
+    func callViewController() {
+        print("Registro concluído.")
+        
+        registerViewController.buttonCreateTapped()
+    }
+}

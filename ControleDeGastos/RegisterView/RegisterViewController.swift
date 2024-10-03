@@ -8,6 +8,10 @@
 import Foundation
 import UIKit
 
+protocol RegisterViewControllerDelegate {
+    func buttonCreateTapped()
+}
+
 class RegisterViewController: UIViewController {
     
     private let backgroundImage: UIImageView = {
@@ -51,6 +55,7 @@ class RegisterViewController: UIViewController {
         emailField.translatesAutoresizingMaskIntoConstraints = false
         passwordCreate.translatesAutoresizingMaskIntoConstraints = false
         buttonRegister.translatesAutoresizingMaskIntoConstraints = false
+        //self.navigationItem.setHidesBackButton(true, animated: true)
         
         view.addSubview(emailField)
         view.addSubview(passwordCreate)
@@ -66,9 +71,7 @@ class RegisterViewController: UIViewController {
             passwordCreate.widthAnchor.constraint(equalToConstant: 200),
             
             buttonRegister.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            buttonRegister.centerYAnchor.constraint(equalTo: passwordCreate.bottomAnchor, constant: 30),
-            
-                   
+            buttonRegister.centerYAnchor.constraint(equalTo: passwordCreate.bottomAnchor, constant: 30)
         ])
     }
     
@@ -85,17 +88,18 @@ class RegisterViewController: UIViewController {
         ])
     }
     
+    // MARK: - Botão create
+    
     @objc func buttonCreateTapped() {
-        let loginViewController = LoginViewController()
-        navigationController?.pushViewController(loginViewController, animated: false)
         
         let registerInteractor = RegisterInteractor(email: getUserEmail(), password: getUserPassword())
         registerInteractor.createUser()
-        //pensar em como limpar o campo
         
+        navigateToLoginViewController()
+        //pensar em como limpar o campo
     }
     
-// MARK: - Envio de informações
+    // MARK: - Envio de informações
     
     func getUserEmail() -> String {
         let email = emailField.text ?? ""
@@ -106,5 +110,20 @@ class RegisterViewController: UIViewController {
         let password = passwordCreate.text ?? ""
         return password
     }
+    
+    // MARK: - Transição de telas
+    
+    func dismissRegisterViewController() {
+        navigationController?.dismiss(animated: true)
+    }
+    
+    func navigateToLoginViewController() {
+        let loginViewController = LoginViewController()
+        navigationController?.pushViewController(loginViewController, animated: false)
+    }
+        
+//    func validateFieldPassEmail() {
+//
+//    }
     
 }

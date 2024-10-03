@@ -1,0 +1,8 @@
+//
+//  CollectionMainInteractor.swift
+//  ControleDeGastos
+//
+//  Created by Joao Jose Domingues Silva (P) on 01/10/24.
+//
+
+import Foundation

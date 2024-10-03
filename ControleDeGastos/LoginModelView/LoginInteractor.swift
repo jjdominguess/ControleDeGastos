@@ -7,9 +7,13 @@
 
 import FirebaseAuth
 
-class LoginInteractor {
+protocol LoginInteractorDelegate{
+    func emailValidate()
+}
+
+class LoginInteractor: LoginInteractorDelegate {
     
-    var presenter: LoginPresenter?
+    var presenter: LoginPresenterDelegate?
     // preciso entender a diferença caso eu colocasse "var presenter: LoginPresente?"
     
     var email: String = ""

@@ -8,12 +8,17 @@
 import Foundation
 import UIKit
 
-class LoginPresenter: UIViewController {
-    var loginViewController: LoginViewController?
+protocol LoginPresenterDelegate {
+    func loginSucess()
+    func loginError(error: Error)
+}
+
+class LoginPresenter: LoginPresenterDelegate {
+    var loginViewController: LoginViewControllerDelegate?
  
     func loginSucess() {
         print("Autenticação realizada com sucesso.")
-        loginViewController?.pushCollectioView()
+        loginViewController?.pushCollectionView()
     }
     
     func loginError(error: Error) {
