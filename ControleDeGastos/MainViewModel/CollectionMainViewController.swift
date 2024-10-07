@@ -89,7 +89,7 @@ class CollectionMainViewController: UIViewController, UICollectionViewDataSource
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         // Clique da célula
         print("célula clicada \(indexPath.item)")
-        let detailcellViewController = DetailCellViewController()
+        let detailcellViewController = DetailViewViewController()
         detailcellViewController.selectedItemIndex = indexPath.item
         navigationController?.pushViewController(detailcellViewController, animated: true)
     }

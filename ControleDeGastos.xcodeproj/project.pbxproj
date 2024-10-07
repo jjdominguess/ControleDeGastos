@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		2846751B2CAC66AA008FDB0A /* CollectionMainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2846751A2CAC66AA008FDB0A /* CollectionMainInteractor.swift */; };
 		2846751D2CAC66D2008FDB0A /* CollectionMainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2846751C2CAC66D2008FDB0A /* CollectionMainPresenter.swift */; };
+		28F582E02CAF5675008DAC83 /* DetailViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F582DF2CAF5675008DAC83 /* DetailViewInteractor.swift */; };
+		28F582E22CAF5683008DAC83 /* DetailViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F582E12CAF5683008DAC83 /* DetailViewPresenter.swift */; };
+		28F582E72CB44843008DAC83 /* CoreDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F582E62CB44843008DAC83 /* CoreDataRepository.swift */; };
 		87FEDAE0418DF75925B19270 /* Pods_ControleDeGastos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 777E42CE53FFB2B42994166B /* Pods_ControleDeGastos.framework */; };
 		CF62FE1D2C93B60B00F3DEAA /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF62FE1C2C93B60B00F3DEAA /* LoginPresenter.swift */; };
 		CF62FE1F2C93B6D100F3DEAA /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF62FE1E2C93B6D100F3DEAA /* RegisterPresenter.swift */; };
@@ -25,7 +28,7 @@
 		CF8D2F3A2C715F76007FDBD1 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8D2F392C715F76007FDBD1 /* LoginInteractor.swift */; };
 		CF8D8DD32C7BBE740044CE34 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8D8DD22C7BBE740044CE34 /* RegisterViewController.swift */; };
 		CF8D8DD52C7BBE850044CE34 /* RegisterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8D8DD42C7BBE850044CE34 /* RegisterInteractor.swift */; };
-		CF9825212C70F7AF00783930 /* DetailCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9825202C70F7AF00783930 /* DetailCellViewController.swift */; };
+		CF9825212C70F7AF00783930 /* DetailViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9825202C70F7AF00783930 /* DetailViewViewController.swift */; };
 		CFB4CF4D2C39CF3D00A08415 /* CollectionMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB4CF4C2C39CF3D00A08415 /* CollectionMainViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +52,9 @@
 /* Begin PBXFileReference section */
 		2846751A2CAC66AA008FDB0A /* CollectionMainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionMainInteractor.swift; sourceTree = "<group>"; };
 		2846751C2CAC66D2008FDB0A /* CollectionMainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionMainPresenter.swift; sourceTree = "<group>"; };
+		28F582DF2CAF5675008DAC83 /* DetailViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewInteractor.swift; sourceTree = "<group>"; };
+		28F582E12CAF5683008DAC83 /* DetailViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewPresenter.swift; sourceTree = "<group>"; };
+		28F582E62CB44843008DAC83 /* CoreDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataRepository.swift; sourceTree = "<group>"; };
 		29E355D6197D6DBC86346EB4 /* Pods-ControleDeGastos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ControleDeGastos.release.xcconfig"; path = "Target Support Files/Pods-ControleDeGastos/Pods-ControleDeGastos.release.xcconfig"; sourceTree = "<group>"; };
 		72DA408D1E75D7C7A0E4FD14 /* Pods-ControleDeGastos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ControleDeGastos.debug.xcconfig"; path = "Target Support Files/Pods-ControleDeGastos/Pods-ControleDeGastos.debug.xcconfig"; sourceTree = "<group>"; };
 		777E42CE53FFB2B42994166B /* Pods_ControleDeGastos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ControleDeGastos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,7 +77,7 @@
 		CF8D2F392C715F76007FDBD1 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
 		CF8D8DD22C7BBE740044CE34 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		CF8D8DD42C7BBE850044CE34 /* RegisterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterInteractor.swift; sourceTree = "<group>"; };
-		CF9825202C70F7AF00783930 /* DetailCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCellViewController.swift; sourceTree = "<group>"; };
+		CF9825202C70F7AF00783930 /* DetailViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewViewController.swift; sourceTree = "<group>"; };
 		CFB4CF4C2C39CF3D00A08415 /* CollectionMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionMainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,7 +110,9 @@
 		2846751E2CAC6765008FDB0A /* DetailView */ = {
 			isa = PBXGroup;
 			children = (
-				CF9825202C70F7AF00783930 /* DetailCellViewController.swift */,
+				CF9825202C70F7AF00783930 /* DetailViewViewController.swift */,
+				28F582DF2CAF5675008DAC83 /* DetailViewInteractor.swift */,
+				28F582E12CAF5683008DAC83 /* DetailViewPresenter.swift */,
 			);
 			path = DetailView;
 			sourceTree = "<group>";
@@ -168,6 +176,7 @@
 				CF84A81E2C2CEC43003D69DE /* Info.plist */,
 				CF6BE67B2C8A89CC00A96E43 /* GoogleService-Info.plist */,
 				CF84A8162C2CEC42003D69DE /* ControleDeGastos.xcdatamodeld */,
+				28F582E62CB44843008DAC83 /* CoreDataRepository.swift */,
 			);
 			path = ControleDeGastos;
 			sourceTree = "<group>";
@@ -398,17 +407,20 @@
 				CF62FE1D2C93B60B00F3DEAA /* LoginPresenter.swift in Sources */,
 				CF793D5C2C55716800872A61 /* CellCollectionView.swift in Sources */,
 				CF84A8182C2CEC42003D69DE /* ControleDeGastos.xcdatamodeld in Sources */,
+				28F582E02CAF5675008DAC83 /* DetailViewInteractor.swift in Sources */,
 				CF8D2F3A2C715F76007FDBD1 /* LoginInteractor.swift in Sources */,
 				2846751B2CAC66AA008FDB0A /* CollectionMainInteractor.swift in Sources */,
 				CFB4CF4D2C39CF3D00A08415 /* CollectionMainViewController.swift in Sources */,
 				CF84A80E2C2CEC42003D69DE /* AppDelegate.swift in Sources */,
 				CF8D8DD32C7BBE740044CE34 /* RegisterViewController.swift in Sources */,
 				CF62FE1F2C93B6D100F3DEAA /* RegisterPresenter.swift in Sources */,
+				28F582E22CAF5683008DAC83 /* DetailViewPresenter.swift in Sources */,
 				2846751D2CAC66D2008FDB0A /* CollectionMainPresenter.swift in Sources */,
+				28F582E72CB44843008DAC83 /* CoreDataRepository.swift in Sources */,
 				CF8D8DD52C7BBE850044CE34 /* RegisterInteractor.swift in Sources */,
 				CF84A8412C2CED88003D69DE /* LoginViewController.swift in Sources */,
 				CF84A8102C2CEC42003D69DE /* SceneDelegate.swift in Sources */,
-				CF9825212C70F7AF00783930 /* DetailCellViewController.swift in Sources */,
+				CF9825212C70F7AF00783930 /* DetailViewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
