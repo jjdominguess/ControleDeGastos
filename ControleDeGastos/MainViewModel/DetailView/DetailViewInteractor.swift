@@ -7,7 +7,7 @@
 
 import Foundation
 
-class DetailViewInteractor: DetailViewInteractorDelegate {
+class DetailViewInteractor {
     
 
 }
