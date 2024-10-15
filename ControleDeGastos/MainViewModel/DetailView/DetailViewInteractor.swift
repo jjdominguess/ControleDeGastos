@@ -7,10 +7,6 @@
 
 import Foundation
 
-protocol DetailViewInteractorDelegate {
-    
-}
-
 class DetailViewInteractor: DetailViewInteractorDelegate {
     
 

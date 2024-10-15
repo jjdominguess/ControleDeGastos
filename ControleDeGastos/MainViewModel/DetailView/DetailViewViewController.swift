@@ -8,9 +8,6 @@
 import Foundation
 import UIKit
 
-protocol DetailViewViewControllerDelegate {
-    
-}
 
 class DetailViewViewController: UIViewController {
     
