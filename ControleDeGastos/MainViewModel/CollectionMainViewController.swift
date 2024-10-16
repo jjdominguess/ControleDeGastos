@@ -89,9 +89,9 @@ class CollectionMainViewController: UIViewController, UICollectionViewDataSource
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         // Clique da célula
         print("célula clicada \(indexPath.item)")
-        let detailcellViewController = DetailCellViewController()
-        detailcellViewController.selectedItemIndex = indexPath.item
-        navigationController?.pushViewController(detailcellViewController, animated: true)
+        let detailViewViewController = DetailViewViewController()
+        detailViewViewController.selectedItemIndex = indexPath.item
+        navigationController?.pushViewController(detailViewViewController, animated: true)
     }
     
     // MARK: - UICollectionViewDelegateFlowLayout

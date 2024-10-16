@@ -121,9 +121,5 @@ class RegisterViewController: UIViewController {
         let loginViewController = LoginViewController()
         navigationController?.pushViewController(loginViewController, animated: false)
     }
-        
-//    func validateFieldPassEmail() {
-//
-//    }
     
 }
