@@ -5,8 +5,8 @@
 //  Created by Joao on 17/08/24.
 //
 
-import Foundation
 import UIKit
+import CoreData
 
 class DetailViewViewController: UIViewController {
     
@@ -34,10 +34,12 @@ class DetailViewViewController: UIViewController {
         return valor
     }()
     
-    private let botaoCadastrar: UIButton = {
-        let botaoCadastrar = UIButton()
-        botaoCadastrar.addTarget(self, action: #selector(registerButtonTapped), for: .touchUpInside)
-        return botaoCadastrar
+    private let registerBillButton: UIButton = {
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(registerButtonTapped), for: .touchUpInside)
+        button.setTitle("Cadastrar", for: .normal)
+        return button
     }()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,6 +56,7 @@ class DetailViewViewController: UIViewController {
         view.addSubview(expiration)
         view.addSubview(valueBill)
         view.addSubview(viewLayout)
+        view.addSubview(registerBillButton)
         
         NSLayoutConstraint.activate([
             expiration.centerXAnchor.constraint(equalTo: view.centerXAnchor),
@@ -62,12 +65,17 @@ class DetailViewViewController: UIViewController {
             
             valueBill.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             valueBill.centerYAnchor.constraint(equalTo: expiration.bottomAnchor, constant: 30),
-            valueBill.widthAnchor.constraint(equalToConstant: 200)
+            valueBill.widthAnchor.constraint(equalToConstant: 200),
+            
+            registerBillButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            registerBillButton.centerYAnchor.constraint(equalTo: valueBill.bottomAnchor, constant: 30)
+            
         ])
     }
     
     @objc func registerButtonTapped() {
         let detailViewInteractor = DetailViewInteractor(value: getValue(), expiration: getExpiration())
+        detailViewInteractor.registerData(value: getValue(), expiration: getExpiration())
     }
     
     //MARK: - Pega valores dos campos de texto

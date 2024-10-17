@@ -10,15 +10,23 @@ import CoreData
 
 class DetailViewInteractor {
     
-    var value: String
-    var expiration: String
+    let coreDataManager = CoreDataManager()
+    
+    var value: String?
+    var expiration: String?
     
     init(value: String, expiration: String) {
         self.value = value
         self.expiration = expiration
     }
     
-    func registerDataBill() {
-        
+    func registerData(value: String, expiration: String) {
+        print(value)
+        print(expiration)
+        coreDataManager.saveData(value: value, expiration: expiration)
+        //coreDataManager.createValues(billValue: value, billExpiration: expiration)
+
     }
+    
+    
 }

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		282BB4092CC0404200433DBA /* DataModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282BB4082CC0404200433DBA /* DataModelManager.swift */; };
+		282BB4092CC0404200433DBA /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282BB4082CC0404200433DBA /* CoreDataManager.swift */; };
 		2846751B2CAC66AA008FDB0A /* CollectionMainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2846751A2CAC66AA008FDB0A /* CollectionMainInteractor.swift */; };
 		2846751D2CAC66D2008FDB0A /* CollectionMainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2846751C2CAC66D2008FDB0A /* CollectionMainPresenter.swift */; };
 		287F24F32CBEF17800440A90 /* DetailViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287F24F22CBEF17800440A90 /* DetailViewPresenter.swift */; };
@@ -50,7 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		282BB4082CC0404200433DBA /* DataModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModelManager.swift; sourceTree = "<group>"; };
+		282BB4082CC0404200433DBA /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		2846751A2CAC66AA008FDB0A /* CollectionMainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionMainInteractor.swift; sourceTree = "<group>"; };
 		2846751C2CAC66D2008FDB0A /* CollectionMainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionMainPresenter.swift; sourceTree = "<group>"; };
 		287F24F22CBEF17800440A90 /* DetailViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewPresenter.swift; sourceTree = "<group>"; };
@@ -122,7 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				CF84A8162C2CEC42003D69DE /* ControleDeGastos.xcdatamodeld */,
-				282BB4082CC0404200433DBA /* DataModelManager.swift */,
+				282BB4082CC0404200433DBA /* CoreDataManager.swift */,
 			);
 			path = DataModel;
 			sourceTree = "<group>";
@@ -420,7 +420,7 @@
 				2846751B2CAC66AA008FDB0A /* CollectionMainInteractor.swift in Sources */,
 				CFB4CF4D2C39CF3D00A08415 /* CollectionMainViewController.swift in Sources */,
 				CF84A80E2C2CEC42003D69DE /* AppDelegate.swift in Sources */,
-				282BB4092CC0404200433DBA /* DataModelManager.swift in Sources */,
+				282BB4092CC0404200433DBA /* CoreDataManager.swift in Sources */,
 				CF8D8DD32C7BBE740044CE34 /* RegisterViewController.swift in Sources */,
 				CF62FE1F2C93B6D100F3DEAA /* RegisterPresenter.swift in Sources */,
 				2846751D2CAC66D2008FDB0A /* CollectionMainPresenter.swift in Sources */,
