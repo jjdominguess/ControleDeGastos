@@ -25,7 +25,7 @@ class DetailViewInteractor {
         print(expiration)
         coreDataManager.saveData(value: value, expiration: expiration)
         //coreDataManager.createValues(billValue: value, billExpiration: expiration)
-
+        coreDataManager.fetchValues()
     }
     
     

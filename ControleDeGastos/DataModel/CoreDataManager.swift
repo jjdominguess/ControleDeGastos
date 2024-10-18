@@ -55,28 +55,29 @@ class CoreDataManager {
         }
     }
     
-    func fetchValues() -> [Entity]? {
+    func fetchValues() {
         let context = persistentContainer.viewContext
         let fetchRequest: NSFetchRequest<Entity> = Entity.fetchRequest()
         
         do {
-            let entities = try context.fetch(fetchRequest)
-            return entities
+            let results = try context.fetch(fetchRequest)
+            for entity in results {
+                print("Expiration \(entity.expiration ?? ""), Value \(entity.value ?? "")")
+            }
         } catch {
             print("Erro ao buscar usuários: \(error)")
-            return nil
         }
         
     }
     
     func updateValues(values: String, expiration: String) {
-        let context = persistentContainer.viewContext
-        fetchValues()
+        _ = persistentContainer.viewContext
         
+    // TODO: terminar método update
     }
     
     func deleteValues() {
-        
+    // TODO: criar método para deletar valores
     }
     
     
