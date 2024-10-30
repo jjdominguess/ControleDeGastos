@@ -20,12 +20,15 @@ class DetailViewInteractor {
         self.expiration = expiration
     }
     
+    func tableView() {
+        
+    }
+    
     func registerData(value: String, expiration: String) {
         print(value)
         print(expiration)
         coreDataManager.saveData(value: value, expiration: expiration)
-        //coreDataManager.createValues(billValue: value, billExpiration: expiration)
-        coreDataManager.fetchValues()
+        
     }
     
     

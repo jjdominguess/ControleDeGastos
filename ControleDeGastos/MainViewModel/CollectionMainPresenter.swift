@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+class CollectionMainPresenter {
+    //let collectionMainViewController = CollectionMainViewController()
+    let collectionMainInteractor = CollectionMainInteractor()
+        
+    func dataToSendCell() {
+        collectionMainInteractor.dataArray
+
+    }
+}

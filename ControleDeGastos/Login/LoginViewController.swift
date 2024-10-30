@@ -27,6 +27,7 @@ class LoginViewController: UIViewController, LoginViewControllerDelegate {
     
     private let userEmailTextField: UITextField = {
         let textField = UITextField()
+        textField.text = "1@3.com"
         textField.placeholder = "Email"
         textField.borderStyle = .roundedRect
         return textField
@@ -35,6 +36,7 @@ class LoginViewController: UIViewController, LoginViewControllerDelegate {
     private let passwordTextField: UITextField = {
         let passwordField = UITextField()
         passwordField.placeholder = "Password"
+        passwordField.text = "123456"
         passwordField.borderStyle = .roundedRect
         passwordField.isSecureTextEntry = true // para ofuscar os caracteres inseridos no campo senha
         return passwordField

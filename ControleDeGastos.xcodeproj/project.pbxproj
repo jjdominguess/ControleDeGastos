@@ -12,6 +12,7 @@
 		2846751D2CAC66D2008FDB0A /* CollectionMainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2846751C2CAC66D2008FDB0A /* CollectionMainPresenter.swift */; };
 		287F24F32CBEF17800440A90 /* DetailViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287F24F22CBEF17800440A90 /* DetailViewPresenter.swift */; };
 		287F24F52CBEF19400440A90 /* DetailViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287F24F42CBEF19400440A90 /* DetailViewInteractor.swift */; };
+		28F76C662CCD273200BD5034 /* CellTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F76C652CCD273200BD5034 /* CellTableView.swift */; };
 		87FEDAE0418DF75925B19270 /* Pods_ControleDeGastos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 777E42CE53FFB2B42994166B /* Pods_ControleDeGastos.framework */; };
 		CF62FE1D2C93B60B00F3DEAA /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF62FE1C2C93B60B00F3DEAA /* LoginPresenter.swift */; };
 		CF62FE1F2C93B6D100F3DEAA /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF62FE1E2C93B6D100F3DEAA /* RegisterPresenter.swift */; };
@@ -55,6 +56,7 @@
 		2846751C2CAC66D2008FDB0A /* CollectionMainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionMainPresenter.swift; sourceTree = "<group>"; };
 		287F24F22CBEF17800440A90 /* DetailViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewPresenter.swift; sourceTree = "<group>"; };
 		287F24F42CBEF19400440A90 /* DetailViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewInteractor.swift; sourceTree = "<group>"; };
+		28F76C652CCD273200BD5034 /* CellTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellTableView.swift; sourceTree = "<group>"; };
 		29E355D6197D6DBC86346EB4 /* Pods-ControleDeGastos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ControleDeGastos.release.xcconfig"; path = "Target Support Files/Pods-ControleDeGastos/Pods-ControleDeGastos.release.xcconfig"; sourceTree = "<group>"; };
 		72DA408D1E75D7C7A0E4FD14 /* Pods-ControleDeGastos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ControleDeGastos.debug.xcconfig"; path = "Target Support Files/Pods-ControleDeGastos/Pods-ControleDeGastos.debug.xcconfig"; sourceTree = "<group>"; };
 		777E42CE53FFB2B42994166B /* Pods_ControleDeGastos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ControleDeGastos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				CF793D5B2C55716800872A61 /* CellCollectionView.swift */,
+				28F76C652CCD273200BD5034 /* CellTableView.swift */,
 			);
 			path = CellCollection;
 			sourceTree = "<group>";
@@ -415,6 +418,7 @@
 				CF62FE1D2C93B60B00F3DEAA /* LoginPresenter.swift in Sources */,
 				CF793D5C2C55716800872A61 /* CellCollectionView.swift in Sources */,
 				CF84A8182C2CEC42003D69DE /* ControleDeGastos.xcdatamodeld in Sources */,
+				28F76C662CCD273200BD5034 /* CellTableView.swift in Sources */,
 				CF8D2F3A2C715F76007FDBD1 /* LoginInteractor.swift in Sources */,
 				287F24F32CBEF17800440A90 /* DetailViewPresenter.swift in Sources */,
 				2846751B2CAC66AA008FDB0A /* CollectionMainInteractor.swift in Sources */,

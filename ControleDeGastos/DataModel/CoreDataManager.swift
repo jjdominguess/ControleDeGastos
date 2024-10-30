@@ -10,6 +10,13 @@ import CoreData
 import UIKit
 
 //classe criada para fazer referencia ao Container do CoreData
+protocol CoreDataManagerDelegate {
+    func saveData()
+    func fetchValues()
+    func deleteData()
+    func fetchSpefificData()
+    func deleteAllData()
+}
 
 class CoreDataManager {
      
@@ -29,15 +36,6 @@ class CoreDataManager {
     
     //MARK: - CRUD
     
-//    func createValues(billValue: String, billExpiration: String) {
-//        print(billValue)
-//        print(billExpiration)
-//        let newValue = Entity(context: CoreDataManager.shared.context)
-//        newValue.value = billValue
-//        newValue.expiration = billExpiration
-//        
-//        appDelegate.saveContext()
-//    }
     func saveData(value: String, expiration: String) {
         print(value)
 
@@ -55,30 +53,74 @@ class CoreDataManager {
         }
     }
     
-    func fetchValues() {
+    func fetchData() -> [String : String] {
+        //TODO: Entender se dá para passar de melhor forma esse valor pego no banco de dados, pois parece gambiarra KKK
         let context = persistentContainer.viewContext
         let fetchRequest: NSFetchRequest<Entity> = Entity.fetchRequest()
+        var dataArray: [String : String] = [:]
         
         do {
-            let results = try context.fetch(fetchRequest)
+            let results = try context.fetch(fetchRequest) as [Entity]
+            
             for entity in results {
-                print("Expiration \(entity.expiration ?? ""), Value \(entity.value ?? "")")
+                if let value = entity.value, let expiration = entity.expiration {
+                    dataArray[expiration] = value
+                }
             }
+            print(dataArray)
         } catch {
             print("Erro ao buscar usuários: \(error)")
         }
-        
+        return dataArray
     }
     
-    func updateValues(values: String, expiration: String) {
-        _ = persistentContainer.viewContext
-        
-    // TODO: terminar método update
-    }
+//    func fetchSpecificData(expirationValue: String) -> Array<NSFetchRequestResult> {
+//        let context = persistentContainer.viewContext
+//        let fetchRequest: NSFetchRequest<Entity> = Entity.fetchRequest()
+//        fetchRequest.fetchLimit = 1
+//        
+//        var returnToOutputString: Array<NSFetchRequestResult>?
+//        
+//        fetchRequest.predicate = NSPredicate(format: "expiration  == %@", expirationValue)
+//
+//        do {
+//            let results = try context.fetch(fetchRequest)
+////            for entity in results {
+////                var expirationValue = String(describing: entity.value)
+////            }
+//            returnToOutputString = results
+//        } catch {
+//            print("Erro ao buscar dados: \(error)")
+//        }
+//        return returnToOutputString!
+//    }
     
-    func deleteValues() {
+    func deleteData(entity: Entity) {
     // TODO: criar método para deletar valores
+        let context = persistentContainer.viewContext
+        context.delete(entity)
+        
+        do {
+            try context.save()
+            print("Usuário deletado com sucesso!")
+        } catch {
+            print("Erro ao deletar usuário: \(error)")
+        }
     }
     
+    func deleteAllData() {
+        let  context = persistentContainer.viewContext
+        
+        let fetchRequest: NSFetchRequest<NSFetchRequestResult> = Entity.fetchRequest()
+        
+        let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
+        
+        do {
+            try context.execute(deleteRequest)
+            print("Todos os dados da entidade foram apagados")
+        } catch {
+            print("Erro ao apagar os dados:\(error)")
+        }
+    }
     
 }

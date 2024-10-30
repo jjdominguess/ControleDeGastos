@@ -8,15 +8,31 @@
 import Foundation
 import UIKit
 
-class CollectionMainViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+class CollectionMainViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UITableViewDelegate {
+    
+    var titlePage = "Lista de contas"
+    
+    let collectionMainPresenter = CollectionMainPresenter()
+    let collectionMainInteractor = CollectionMainInteractor()
+    
+    private let tableView: UITableView = {
+        let tableView = UITableView()
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        return tableView
+    }()
+    
+    let dataTableView = ["item 1", "item 2"]
     
     private var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Lista de Contas"
-        view.backgroundColor = .white
+        self.title = titlePage
         setupCollectionView()
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        setupLayoutTableView()
     }
     
     private func setupCollectionView(){
@@ -35,18 +51,12 @@ class CollectionMainViewController: UIViewController, UICollectionViewDataSource
         
         view.addSubview(collectionView)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
-        
-        NSLayoutConstraint.activate([
-            collectionView.topAnchor.constraint(equalTo: view.topAnchor),
-            collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
-        ])
-        
+        collectionViewConstraint()
     }
+ 
     
-    //MARK: - UICollectionDataSource
-    
+    // MARK: - CollectionView
+    // UICollectionDataSource
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 4
     }
@@ -82,22 +92,60 @@ class CollectionMainViewController: UIViewController, UICollectionViewDataSource
         
         return cell
     }
-        
-
-    // MARK: - UICollectionViewDelegate
     
+    //MARK: - CollectionView
+    //UICollectionViewDelegate
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         // Clique da célula
         print("célula clicada \(indexPath.item)")
         let detailViewViewController = DetailViewViewController()
         detailViewViewController.selectedItemIndex = indexPath.item
         navigationController?.pushViewController(detailViewViewController, animated: true)
+    
     }
     
-    // MARK: - UICollectionViewDelegateFlowLayout
-
+    //UICollectionViewDelegateFlowLayout
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout,sizeForItemAt: IndexPath) -> CGSize {
         return CGSize(width: 170, height: 170)
     }
+    
+    func collectionViewConstraint() {
+        NSLayoutConstraint.activate([
+            collectionView.topAnchor.constraint(equalTo: view.topAnchor),
+            collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+        ])
+    }
 }
 
+
+// MARK: - TableView
+extension CollectionMainViewController: UITableViewDataSource {
+    private func setupLayoutTableView() {
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        
+        view.addSubview(tableView)
+        
+        NSLayoutConstraint.activate([
+            tableView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            tableView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 170),
+            tableView.widthAnchor.constraint(equalToConstant: 350),
+            tableView.heightAnchor.constraint(equalToConstant: 175)
+        ])
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 4
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        //collectionMainInteractor.fetchValueToSendCell() as? String
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = collectionMainInteractor.fetchValueToSendCell() as? String
+        return cell
+    }
+    
+}
